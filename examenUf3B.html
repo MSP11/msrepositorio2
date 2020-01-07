@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title> Examen UF3</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- iso-8859-1 utf-8 -->
+        <!--michael_salgado-->
+        <script src="js/salgado_michael.js" type="text/javascript"></script>
+        <style type="text/css">
+            .error {
+                color:red;
+                display:none;
+            }
+        </style>
+    </head>
+    <body>
+        <form name='formBUF3' >
+            Alias: <input type='text' id='nickname' /><span class='error' id='nickname_error'>Numbers and Letters Only</span><br />
+            <input name="save" type="checkbox" id ="save" value="save"/> Recorda Nickname<br>
+            Usuari: <input type='text' id='user' /><span class='error' id='user_error'>Please enter between 4 and 9 characters</span><br />
+            IP adress: <input type='text' id='ip' /><span class='error' id='ip_error'>Format 999.999.999.999</span><br />
+            Email: <input type='text' id='email' /><span class='error' id='email_error'>Please enter a valid email address</span><br />
+            Pais: <select id='pais'>
+                <option>---</option>
+                <option>AL</option>
+                <option>CA</option>
+                <option>TX</option>
+                <option>WI</option>
+            </select><span class='error' id='pais_error'>Please Choose a pais</span><br />
+            Choose curs: <span class='error' id='curs_error'>Please select a Curs</span><br />
+            <input type=radio name="curs" value= "avançat">avançat 
+            <input type=radio name="curs" value= "mig"/>mig
+            <input type=radio name="curs" value= "baix">baix		
+            <br/>
+            <br/>            
+            <input id="submit" type='submit' value='Submit' />
+        </form>
+    </body>
+</html>
